@@ -6,7 +6,7 @@
 
 This is my submission for QR code component front-end mentor website challenge.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+**built with SCSS & HTML**
 
 ## The challenge
 
