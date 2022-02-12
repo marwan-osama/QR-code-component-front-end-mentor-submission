@@ -1,0 +1,71 @@
+$colors: (
+    "White": hsl(0, 0%, 100%),
+    "Light-gray": hsl(212, 45%, 89%),
+    "Grayish-blue": hsl(220, 15%, 55%),
+    "Dark-blue": hsl(218, 44%, 22%)
+);
+
+.clr-head {
+    color: map-get($colors, "Dark-blue");
+}
+
+.clr-para {
+    color: map-get($colors, "Grayish-blue");
+}
+
+.bg-primary {
+    background-color: map-get($colors, "Light-gray");
+}
+
+.bg-secondary {
+    background-color: map-get($colors, "White");
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 14px);
+
+    .inner-wrap {
+        padding: 1em;
+        border-radius: 18px;
+        width: 300px;
+        box-shadow: 12px 12px 64px -48px map-get($colors, "Grayish-blue");
+
+        #qr-img-wrap {
+            padding-top: 100%;
+            overflow: hidden;
+            position: relative;
+            
+            img {
+                position: absolute;
+                border-radius: 12px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+            }
+        }
+        .text-wrap {
+            text-align: center;
+            width: 85%;
+            margin: auto;
+
+            h2 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
