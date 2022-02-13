@@ -5,6 +5,7 @@
 ## Welcome! 👋
 
 This is my submission for QR code component front-end mentor website challenge.
+live version: https://qrcodecomponent-fem.netlify.app
 
 **built with SCSS & HTML**
 
